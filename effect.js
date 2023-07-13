@@ -195,8 +195,8 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			// window.location.replace("http://www.w3schools.com");
 			$('#site2').fadeIn('slow');
-			alert('hello');
-			window.location="test\\index.html"
+			// alert('hello');
+			// window.location="test\\index.html"
 		});
 		
 	});
