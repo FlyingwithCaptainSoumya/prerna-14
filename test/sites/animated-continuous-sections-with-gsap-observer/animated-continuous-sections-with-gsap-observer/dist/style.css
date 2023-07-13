@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  background: black;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin-right: -0.5em;
+  color: #cccccc;
+  width: 90vw;
+  max-width: 1200px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  width: 100%;
+  z-index: 3;
+  height: 7em;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(0.66rem, 2vw, 1rem);
+  letter-spacing: 0.5em;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  visibility: hidden;
+}
+section .outer,
+section .inner {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+section .bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+section .bg h2 {
+  z-index: 2;
+}
+section .bg .clip-text {
+  overflow: hidden;
+}
+
+.first .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/_MG_2603.JPG?alt=media&token=60cb4542-7eba-4a03-b961-1067e5a764a2);
+}
+
+.second .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426691.jpg?alt=media&token=07053bbd-10d5-4bf1-b2fb-62275d77baa1);
+}
+
+.third .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425151.jpg?alt=media&token=e576ea38-7319-4ec2-94d2-9088b46c76d9);
+}
+
+.fourth .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/_MG_2150.JPG?alt=media&token=5bb55710-afb9-4a61-b428-618eddea0826);
+}
+
+.fifth .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426470.JPG?alt=media&token=fc465d80-4840-49ed-aca2-ce8bb80e5e64);
+  background-position: 50% 45%;
+}
+
+h2 * {
+  will-change: transform;
+}

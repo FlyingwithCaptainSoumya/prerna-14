@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    font-family: "Neue Montreal";
+}
+
+.home {
+    overflow: hidden;
+}
+
+/* menu */
+nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.menu__logo, .menu__items-link {
+    padding: 40px;
+}
+
+.menu__logo a {
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__items {
+    display: flex;
+}
+
+.menu__items-link a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+}
+
+.menu__items-link.active a {
+    text-decoration: underline;
+}
+
+/* horizontal scroll items  */
+
+.container {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.container__item {
+    position: relative;
+    width: 540px;
+    height: 360px;
+    margin: 50px 500px 20px 80px;
+}
+
+.container__item-header h1 {
+    position: relative;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 360px;
+    font-size: 100px !important;
+}
+
+#new{
+    font-family: 'Fredericka the Great', cursive;
+    /* font-family: 'Major Mono Display', monospace; */
+}
+#new span{
+    font-family: 'Major Mono Display', monospace;
+}
+
+.container__item h1 {
+    position: absolute;
+    left: 40px;
+    bottom: -40px;
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-weight: lighter;
+    font-size: 64px;
+}
+
+.container__item-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container__item-1 {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/Birthday%2F_MG_2021_cropped.JPG?alt=media&token=ab0d02fd-1bef-407d-945d-3084e8b3b2c8) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-2 {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/Model%2F1689057426230_cropped.jpg?alt=media&token=291214c2-44e0-4cfc-8d08-11b2eccd9c8d) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-3 {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425137.jpg?alt=media&token=320ffb63-9fd6-42f3-923c-d3a99c4d0e3d) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-4 {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/_MG_2154.JPG?alt=media&token=fdb98ad3-eb4e-4f27-abcd-b430f86e2f3c) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-5 {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425615cropped.png?alt=media&token=3fa5a01b-2ccd-42d1-bac8-505c6e4a65b7) no-repeat 50% 50%;
+    background-size: cover;
+    object-fit: fill;
+}
+
+@media(max-width: 900px) {
+    .container__item {
+        width: 300px;
+        height: 200px;
+        margin: 50px 100px 20px 80px;
+    }
+
+    .container__item-header h1 {
+        font-size: 30px !important;
+        left: -50%;
+    }
+
+    .container__item h1 {
+        font-size: 40px;
+        bottom: -20px;
+    }
+}
+
+/* about page styles */
+
+#js-scroll {
+    height: 200%;
+}
+
+.about__container {
+    width: 50%;
+    margin: 180px 0 100px 100px;
+    padding: 40px;
+    /* border: 1px solid #525252; */
+}
+
+.about__container p {
+    margin: 60px 0;
+    color: #fff;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 49px;
+    font-weight: 400;
+    z-index: 2;
+    line-height: 60px;
+}
+
+.about__container p span {
+    /* font-family: "GrandSlang Roman"; */
+    font-size: 36px;
+    font-family: 'Mali', cursive;
+
+}
+
+.about__container-contact-link a {
+    color: #fff;
+}
+
+p.about__container-link {
+    font-size: 26px;
+}
+
+.about__container-link a {
+    color: #fff;
+    font-size: 26px;
+}
+
+.cursor-follow {
+    position: absolute;
+    background: url(../pics/cursor.png) no-repeat 50% 50%;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    z-index: -1;
+ 
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px, 5px);
+}
+
+@media(max-width: 900px) {
+    .about__container {
+        width: 70%;
+        margin: 140px 0 60px 40px;
+    }
+
+    .cursor-follow {
+        display: none;
+    }
+}
+
+/* project section */
+
+.project__container {
+    width: 70%;
+    margin: 100px auto;
+    /* border: 1px solid #5c5c5c; */
+    color: #fff;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.project__container-title h1{
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-size: 140px;
+}
+
+.project__container-subtitle {
+    margin: 20px 0;
+    font-family: "Neue Montreal";
+    font-size: 16px;
+}
+
+.project__container-images {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0;
+    
+}
+
+.project__image {
+    background: red;
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.project__image-one {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/_MG_2036.JPG?alt=media&token=d289f12f-06a5-41f3-8b9e-a8aa388875b5) no-repeat 50% 50%;
+    background-size: 330px;
+    /* top: 50px */
+}
+
+.project__image-two {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/Birthday%2F_MG_2043.JPG?alt=media&token=82be8df5-51b7-4d33-aff9-9b2a7444dfd8) no-repeat 50% 50%;
+    background-size: 380px;
+}
+
+.project__image-three {
+    position: relative;
+    left: 300px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/Birthday%2F_MG_2119.JPG?alt=media&token=72d9fb20-7211-4337-a59f-f7301b513ab8) no-repeat 50% 50%;
+    background-size: 675px;
+}
+
+.project__image-four {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/_MG_2254.JPG?alt=media&token=fda3e341-1d51-4566-9186-ddaeb00565c2) no-repeat 50% 50%;
+    background-size: 390px;
+}
+
+.project__image-five {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425753.jpg?alt=media&token=b7e23e96-4c5c-47a7-90f5-a5553c42871f) no-repeat 50% 50%;
+    background-size: 340px;
+}
+
+.project__image-six {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425020.jpg?alt=media&token=5de663da-bc74-4c3b-9ab5-787b323b6370) no-repeat 50% 50%;
+    background-size: 380px;
+}
+
+.project__image-seven {
+    position: relative;
+    left: 300px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1675499880367.jpg?alt=media&token=36ddfa07-5436-4778-abe3-c092caaacff7) no-repeat 50% 50%;
+    background-size: 375px;
+}
+
+.project__image-eight {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426216.jpg?alt=media&token=6fb84d38-27b9-4f0b-aa7a-ff1c9f31ae6e) no-repeat 50% 50%;
+    background-size: 350px;
+}
+
+.project__image-nine {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425180.jpg?alt=media&token=7fd3ecca-a49f-4b3f-9976-7ea9854fae01) no-repeat 50% 50%;
+    background-size: 630px;
+}
+
+.project__image-ten {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425256.jpg?alt=media&token=17300b2b-355c-4311-9761-6778eb7c4cf1) no-repeat 50% 50%;
+    background-size:490px;
+}
+
+.project__image-eleven {
+    position: relative;
+    left: 300px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1657661757795.jpg?alt=media&token=7647f20f-2140-4c0c-8b7d-81a1ce48dade) no-repeat 50% 50%;
+    background-size: 550px;
+    
+}
+
+.project__image-twelve {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689238606527.jpg?alt=media&token=1a12b349-f1fc-45bd-b896-296625c80672) no-repeat 50% 50%;
+    background-size: 300px;
+    rotate: -90deg;
+}
+.project__image-13 {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426875.jpg?alt=media&token=65892ae4-ea93-4140-bb7f-02f1680998e6) no-repeat 50% 50%;
+    background-size: 300px;
+}
+
+.project__image-14 {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426044.jpg?alt=media&token=8739c082-896e-4b99-84c7-500249a1438f) no-repeat 50% 50%;
+    background-size: 350px;
+}
+
+.project__image-15 {
+    position: relative;
+    left: 300px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426370.jpg?alt=media&token=e7d91784-8733-41a1-9a34-968836543861) no-repeat 50% 50%;
+    background-size: 320px;
+    
+}
+
+.project__image-16 {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/CHI_0945.jpg?alt=media&token=29405a79-2b23-456f-946b-987f30957d6f) no-repeat 50% 50%;
+    background-size: 650px;
+}
+
+.project__image-17 {
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426130.jpg?alt=media&token=40679f19-b40c-435b-83bb-e511db88242e) no-repeat 50% 50%;
+    background-size: 320px;
+}
+
+.project__image-18 {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426300.jpg?alt=media&token=ca791705-5447-4dfd-9244-d3068f157004) no-repeat 50% 50%;
+    background-size: 380px;
+}
+
+.project__image-19 {
+    position: relative;
+    left: 300px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057425822.png?alt=media&token=eba8612a-0072-4d22-8046-457e0d5234a3) no-repeat 50% 50%;
+    background-size: 425px;
+}
+
+.project__image-20 {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/prerana-14.appspot.com/o/1689057426513.JPG?alt=media&token=e3202ad3-a816-4864-94c2-187a6e1e3696) no-repeat 50% 50%;
+    background-size: 590px;
+}
+
+.project-next-link {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-next-link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "GrandSlang Roman";
+    font-size: 160px;
+}
+
+.anime-js-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+@media(max-width: 900px) {
+    .project__container-title h1 {
+        font-size: 40px;
+    }
+
+    .project__container {
+        width: 80%;
+    }
+
+    .project__container-images {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .project__image {
+        width: 90%;
+    }
+
+    .project__image-one, .project__image-two, .project__image-three, .project__image-four, .project__image-five, .project__image-six, .project__image-seven, .project__image-eight, .project__image-nine, .project__image-ten, .project__image-eleven, .project__image-twelve .project__image-13, .project__image-14, .project__image-15, .project__image-16, .project__image-17, .project__image-18, .project__image-19, .project__image-20 {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+#puja {
+    font-family: 'Bad Script', cursive;
+    font-size: 26px;
+}
+#fashion {
+    font-family: 'Bad Script', cursive;
+    font-size: 26px;
+}
+#employee {
+    font-family: 'Bad Script', cursive;
+    font-size: 26px;
+}
+#photo {
+    font-family: 'Bad Script', cursive;
+    font-size: 26px;
+}
+#travel{
+    font-family: 'Bad Script', cursive;
+    font-size: 26px;
+}
